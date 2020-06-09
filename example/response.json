@@ -1,0 +1,2569 @@
+{
+  "records": [
+    {
+      "uuid": "30c94364-934c-4a27-b127-445d43abc99d",
+      "name": "bastion",
+      "size": 107374182400,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/bastion",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 777,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 47244640258
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t85_fls1_axsprt1",
+        "uuid": "a8d00e71-85b4-11ea-b196-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/a8d00e71-85b4-11ea-b196-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 107374182400,
+        "available": 101310005248,
+        "used": 695468032,
+        "footprint": 712921088,
+        "over_provisioned": 0,
+        "metadata": 596520960,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 695468032
+        },
+        "snapshot": {
+          "used": 17453056,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/30c94364-934c-4a27-b127-445d43abc99d"
+        }
+      }
+    },
+    {
+      "uuid": "12e4fe4a-34cf-49e5-955f-40099d1c64cf",
+      "name": "rootvol",
+      "size": 1073741824,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": true,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 47244640257
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t85_fls1_axsprt1",
+        "uuid": "a8d00e71-85b4-11ea-b196-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/a8d00e71-85b4-11ea-b196-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 1073741824,
+        "available": 1017737216,
+        "used": 2318336,
+        "footprint": 9674752,
+        "over_provisioned": 0,
+        "metadata": 11005952,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 2318336
+        },
+        "snapshot": {
+          "used": 7356416,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/12e4fe4a-34cf-49e5-955f-40099d1c64cf"
+        }
+      }
+    },
+    {
+      "uuid": "3a4c27a1-8517-4713-a1a7-e985229c1e51",
+      "name": "rootvol",
+      "size": 1073741824,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": true,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 25769803777
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t80_fls2_prt1",
+        "uuid": "fbef4ea3-10c2-11ea-8063-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/fbef4ea3-10c2-11ea-8063-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 1073741824,
+        "available": 1017929728,
+        "used": 2125824,
+        "footprint": 7303168,
+        "over_provisioned": 0,
+        "metadata": 11005952,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 2125824
+        },
+        "snapshot": {
+          "used": 5177344,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/3a4c27a1-8517-4713-a1a7-e985229c1e51"
+        }
+      }
+    },
+    {
+      "uuid": "40ecffe9-d8a9-4052-9359-b4bfac1ae61f",
+      "name": "rootvol",
+      "size": 1073741824,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": true,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 17179869185
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls4_prt1",
+        "uuid": "675dd3df-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/675dd3df-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 1073741824,
+        "available": 1017835520,
+        "used": 2220032,
+        "footprint": 7491584,
+        "over_provisioned": 0,
+        "metadata": 11005952,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 2220032
+        },
+        "snapshot": {
+          "used": 5271552,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/40ecffe9-d8a9-4052-9359-b4bfac1ae61f"
+        }
+      }
+    },
+    {
+      "uuid": "a0f93b09-f99c-4a0f-be3a-9aa46f2caa11",
+      "name": "rootvol",
+      "size": 1073741824,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": true,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 38654705665
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t81_fls2_tprt1",
+        "uuid": "22d68869-6322-11ea-b196-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/22d68869-6322-11ea-b196-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 1073741824,
+        "available": 1017942016,
+        "used": 2113536,
+        "footprint": 7413760,
+        "over_provisioned": 0,
+        "metadata": 11005952,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 2113536
+        },
+        "snapshot": {
+          "used": 5300224,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/a0f93b09-f99c-4a0f-be3a-9aa46f2caa11"
+        }
+      }
+    },
+    {
+      "uuid": "bc517a60-9a69-471b-a67c-b9d4a40c7ca6",
+      "name": "rootvol",
+      "size": 1073741824,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": true,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 21474836481
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t80_fls1_prt1",
+        "uuid": "f1548196-10c2-11ea-8063-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/f1548196-10c2-11ea-8063-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 1073741824,
+        "available": 1017753600,
+        "used": 2301952,
+        "footprint": 9441280,
+        "over_provisioned": 0,
+        "metadata": 11005952,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 2301952
+        },
+        "snapshot": {
+          "used": 7139328,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/bc517a60-9a69-471b-a67c-b9d4a40c7ca6"
+        }
+      }
+    },
+    {
+      "uuid": "c9eb60a5-975c-482f-9761-25e2af50c133",
+      "name": "rootvol",
+      "size": 1073741824,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": true,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 12884901889
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls3_prt1",
+        "uuid": "5c1561d5-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/5c1561d5-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 1073741824,
+        "available": 1017733120,
+        "used": 2322432,
+        "footprint": 9457664,
+        "over_provisioned": 0,
+        "metadata": 11005952,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 2322432
+        },
+        "snapshot": {
+          "used": 7135232,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/c9eb60a5-975c-482f-9761-25e2af50c133"
+        }
+      }
+    },
+    {
+      "uuid": "ecc3651f-a2b0-4151-a119-6f31eb24de4f",
+      "name": "rootvol",
+      "size": 1073741824,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": true,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 34359738369
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t81_fls1_tprt1",
+        "uuid": "1e356ec2-6322-11ea-b196-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/1e356ec2-6322-11ea-b196-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 1073741824,
+        "available": 1017774080,
+        "used": 2281472,
+        "footprint": 9445376,
+        "over_provisioned": 0,
+        "metadata": 11005952,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 2281472
+        },
+        "snapshot": {
+          "used": 7163904,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/ecc3651f-a2b0-4151-a119-6f31eb24de4f"
+        }
+      }
+    },
+    {
+      "uuid": "4be73a89-0664-42bb-8569-787f79e22022",
+      "name": "t80_fls1_prt1_software",
+      "size": 42949672960,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 21474836481
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t80_fls1_prt1",
+        "uuid": "f1548196-10c2-11ea-8063-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/f1548196-10c2-11ea-8063-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 42949672960,
+        "available": 40794546176,
+        "used": 7643136,
+        "footprint": 24342528,
+        "over_provisioned": 0,
+        "metadata": 238608384,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 7643136
+        },
+        "snapshot": {
+          "used": 16699392,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/4be73a89-0664-42bb-8569-787f79e22022"
+        }
+      }
+    },
+    {
+      "uuid": "e8b67f59-64e8-46e0-b988-ab8ba054fa93",
+      "name": "t80_fls1_prt1_vol0",
+      "size": 536870912000,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 21474836481
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t80_fls1_prt1",
+        "uuid": "f1548196-10c2-11ea-8063-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/f1548196-10c2-11ea-8063-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 536870912000,
+        "available": 510019846144,
+        "used": 7520256,
+        "footprint": 24047616,
+        "over_provisioned": 0,
+        "metadata": 2982612992,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 7520256
+        },
+        "snapshot": {
+          "used": 16527360,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/e8b67f59-64e8-46e0-b988-ab8ba054fa93"
+        }
+      }
+    },
+    {
+      "uuid": "5bcfb079-81c7-4a86-b029-c9a2189f53e3",
+      "name": "t80_fls2_prt1_software",
+      "size": 42949672960,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 25769803777
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t80_fls2_prt1",
+        "uuid": "fbef4ea3-10c2-11ea-8063-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/fbef4ea3-10c2-11ea-8063-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 42949672960,
+        "available": 40794243072,
+        "used": 7946240,
+        "footprint": 21741568,
+        "over_provisioned": 0,
+        "metadata": 238608384,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 7946240
+        },
+        "snapshot": {
+          "used": 13795328,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/5bcfb079-81c7-4a86-b029-c9a2189f53e3"
+        }
+      }
+    },
+    {
+      "uuid": "9a18adfa-a985-4c7f-9e26-a09af8f4dddb",
+      "name": "t80_fls2_prt1_vol0",
+      "size": 536870912000,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 755,
+        "export_policy": {
+          "name": "default",
+          "id": 25769803777
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t80_fls2_prt1",
+        "uuid": "fbef4ea3-10c2-11ea-8063-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/fbef4ea3-10c2-11ea-8063-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 536870912000,
+        "available": 510019915776,
+        "used": 7450624,
+        "footprint": 20385792,
+        "over_provisioned": 0,
+        "metadata": 2982612992,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 7450624
+        },
+        "snapshot": {
+          "used": 12935168,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 0,
+          "total": 0,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/9a18adfa-a985-4c7f-9e26-a09af8f4dddb"
+        }
+      }
+    },
+    {
+      "uuid": "850b5371-c961-493f-8014-e767d3a261fe",
+      "name": "t81_fls1_tprt1_docker",
+      "size": 107374182400,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/t81_fls1_tprt1_docker",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 711,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 34359738370
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t81_fls1_tprt1",
+        "uuid": "1e356ec2-6322-11ea-b196-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/1e356ec2-6322-11ea-b196-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 107374182400,
+        "available": 63716507648,
+        "used": 38304325632,
+        "footprint": 43665477632,
+        "over_provisioned": 0,
+        "metadata": 596520960,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 20893609984
+        },
+        "snapshot": {
+          "used": 22779424768,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 146,
+          "total": 495,
+          "read": 3841,
+          "write": 317
+        },
+        "iops": {
+          "read": 19,
+          "write": 94,
+          "other": 139,
+          "total": 253
+        },
+        "throughput": {
+          "read": 128341,
+          "write": 528849,
+          "other": 0,
+          "total": 657190
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/850b5371-c961-493f-8014-e767d3a261fe"
+        }
+      }
+    },
+    {
+      "uuid": "46d3e91a-b6a6-4818-a12d-c95dca18cc34",
+      "name": "t81_fls2_tprt1_syslog",
+      "size": 214748364800,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/tprt1_syslog",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 775,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 38654705666
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t81_fls2_tprt1",
+        "uuid": "22d68869-6322-11ea-b196-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/22d68869-6322-11ea-b196-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 214748364800,
+        "available": 200796590080,
+        "used": 3214495744,
+        "footprint": 5436837888,
+        "over_provisioned": 0,
+        "metadata": 1193046016,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 3214495744
+        },
+        "snapshot": {
+          "used": 2222489600,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 74,
+          "total": 166,
+          "read": 0,
+          "write": 214
+        },
+        "iops": {
+          "read": 0,
+          "write": 3,
+          "other": 1,
+          "total": 5
+        },
+        "throughput": {
+          "read": 0,
+          "write": 7251,
+          "other": 0,
+          "total": 7251
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/46d3e91a-b6a6-4818-a12d-c95dca18cc34"
+        }
+      }
+    },
+    {
+      "uuid": "256856d6-283c-469e-a660-65e99fdd7e27",
+      "name": "t88_fls3_prt1_data1",
+      "size": 536870912000,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/t88_fls3_prt1_data1",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 777,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 12884901890
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls3_prt1",
+        "uuid": "5c1561d5-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/5c1561d5-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 536870912000,
+        "available": 509953146880,
+        "used": 74227712,
+        "footprint": 242114560,
+        "over_provisioned": 0,
+        "metadata": 2982612992,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 74227712
+        },
+        "snapshot": {
+          "used": 167886848,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 63,
+          "total": 67,
+          "read": 0,
+          "write": 179
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 8,
+          "total": 8
+        },
+        "throughput": {
+          "read": 0,
+          "write": 2,
+          "other": 0,
+          "total": 2
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/256856d6-283c-469e-a660-65e99fdd7e27"
+        }
+      }
+    },
+    {
+      "uuid": "f7b6e0ac-c4a4-4728-b6c1-c931c97d97f9",
+      "name": "t88_fls3_prt1_pool1_root",
+      "size": 536870912000,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/t88_fls3_prt1_pool1_root",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 777,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 12884901890
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls3_prt1",
+        "uuid": "5c1561d5-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/5c1561d5-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 536870912000,
+        "available": 449473253376,
+        "used": 60555755520,
+        "footprint": 87398772736,
+        "over_provisioned": 0,
+        "metadata": 2982612992,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 55311740928
+        },
+        "snapshot": {
+          "used": 32087560192,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 61,
+          "total": 253,
+          "read": 0,
+          "write": 331
+        },
+        "iops": {
+          "read": 0,
+          "write": 8,
+          "other": 3,
+          "total": 12
+        },
+        "throughput": {
+          "read": 0,
+          "write": 135988,
+          "other": 0,
+          "total": 135988
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/f7b6e0ac-c4a4-4728-b6c1-c931c97d97f9"
+        }
+      }
+    },
+    {
+      "uuid": "638973b7-284c-4f14-b6f6-ce4142f19056",
+      "name": "t88_fls3_prt1_pool3_root",
+      "size": 536870912000,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/t88_fls3_prt1_pool3_root",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 777,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 12884901890
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls3_prt1",
+        "uuid": "5c1561d5-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/5c1561d5-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 536870912000,
+        "available": 472430645248,
+        "used": 37596971008,
+        "footprint": 41353957376,
+        "over_provisioned": 0,
+        "metadata": 2982612992,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 37596971008
+        },
+        "snapshot": {
+          "used": 3757207552,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 78,
+          "total": 142,
+          "read": 0,
+          "write": 219
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        },
+        "throughput": {
+          "read": 0,
+          "write": 3754,
+          "other": 0,
+          "total": 3754
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/638973b7-284c-4f14-b6f6-ce4142f19056"
+        }
+      }
+    },
+    {
+      "uuid": "0d88618a-226f-47a5-b173-dd28e6cdd735",
+      "name": "t88_fls3_prt1_ssvm",
+      "size": 214748364800,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_01_sas01_1800g_aggr0",
+          "uuid": "3b0fd18d-111d-4345-bb1b-0fb75c742383"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/t88_fls3_prt1_ssvm",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 777,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 12884901890
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls3_prt1",
+        "uuid": "5c1561d5-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/5c1561d5-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 214748364800,
+        "available": 171330134016,
+        "used": 32680812544,
+        "footprint": 32708567040,
+        "over_provisioned": 0,
+        "metadata": 1193046016,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 32680812544
+        },
+        "snapshot": {
+          "used": 27754496,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 66,
+          "total": 66,
+          "read": 0,
+          "write": 0
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 1,
+          "total": 1
+        },
+        "throughput": {
+          "read": 0,
+          "write": 0,
+          "other": 0,
+          "total": 0
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/0d88618a-226f-47a5-b173-dd28e6cdd735"
+        }
+      }
+    },
+    {
+      "uuid": "0a9eba1b-a168-49b0-a2fb-6bc5c7b48de9",
+      "name": "t88_fls4_prt1_data1",
+      "size": 536870912000,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/t88_fls4_prt1_data1",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 777,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 17179869186
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls4_prt1",
+        "uuid": "675dd3df-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/675dd3df-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 536870912000,
+        "available": 509961338880,
+        "used": 66035712,
+        "footprint": 166113280,
+        "over_provisioned": 0,
+        "metadata": 2982612992,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 66035712
+        },
+        "snapshot": {
+          "used": 100077568,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 62,
+          "total": 65,
+          "read": 0,
+          "write": 172
+        },
+        "iops": {
+          "read": 0,
+          "write": 0,
+          "other": 8,
+          "total": 8
+        },
+        "throughput": {
+          "read": 0,
+          "write": 2,
+          "other": 0,
+          "total": 2
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/0a9eba1b-a168-49b0-a2fb-6bc5c7b48de9"
+        }
+      }
+    },
+    {
+      "uuid": "c1d691df-9536-4301-b006-5fbdca0ba1ce",
+      "name": "t88_fls4_prt1_pool2_root",
+      "size": 536870912000,
+      "state": "online",
+      "style": "flexvol",
+      "is_svm_root": false,
+      "tiering": {
+        "policy": "none"
+      },
+      "type": "rw",
+      "aggregates": [
+        {
+          "name": "flc1_02_sas01_1800g_aggr0",
+          "uuid": "35bf332f-ac97-4f17-975e-0dd33d554e68"
+        }
+      ],
+      "encryption": {
+        "enabled": false,
+        "state": "unencrypted",
+        "key_id": "",
+        "type": "none"
+      },
+      "clone": {
+        "is_flexclone": false
+      },
+      "efficiency": {
+        "compression": "none",
+        "dedupe": "none",
+        "cross_volume_dedupe": "none",
+        "compaction": "none",
+        "schedule": "-",
+        "policy": {
+          "name": "-"
+        }
+      },
+      "nas": {
+        "gid": 0,
+        "path": "/vol/t88_fls4_prt1_pool2_root",
+        "security_style": "unix",
+        "uid": 0,
+        "unix_permissions": 777,
+        "export_policy": {
+          "name": "FullAccess",
+          "id": 17179869186
+        }
+      },
+      "snaplock": {
+        "type": "non_snaplock"
+      },
+      "snapshot_policy": {
+        "name": "default",
+        "uuid": "28cc85fe-bbf0-11e8-8a5e-00a098f52407"
+      },
+      "svm": {
+        "name": "t88_fls4_prt1",
+        "uuid": "675dd3df-c099-11e8-8fb6-00a098f52440",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/675dd3df-c099-11e8-8fb6-00a098f52440"
+          }
+        }
+      },
+      "quota": {
+        "state": "off"
+      },
+      "qos": {
+        "policy": {
+          "min_throughput_iops": 0,
+          "max_throughput_iops": 0,
+          "max_throughput_mbps": 0
+        }
+      },
+      "flexcache_endpoint_type": "none",
+      "space": {
+        "size": 536870912000,
+        "available": 419621187584,
+        "used": 90406473728,
+        "footprint": 117249552384,
+        "over_provisioned": 0,
+        "metadata": 2982612992,
+        "logical_space": {
+          "reporting": false,
+          "enforcement": false,
+          "used_by_afs": 80700555264
+        },
+        "snapshot": {
+          "used": 36549464064,
+          "reserve_percent": 5,
+          "autodelete_enabled": false
+        }
+      },
+      "guarantee": {
+        "type": "volume",
+        "honored": true
+      },
+      "snapmirror": {
+        "is_protected": false
+      },
+      "metric": {
+        "timestamp": "2020-06-04T04:09:00Z",
+        "duration": "PT15S",
+        "status": "ok",
+        "latency": {
+          "other": 62,
+          "total": 204,
+          "read": 283,
+          "write": 246
+        },
+        "iops": {
+          "read": 0,
+          "write": 12,
+          "other": 3,
+          "total": 15
+        },
+        "throughput": {
+          "read": 4369,
+          "write": 115508,
+          "other": 0,
+          "total": 119877
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/c1d691df-9536-4301-b006-5fbdca0ba1ce"
+        }
+      }
+    }
+  ],
+  "num_records": 20,
+  "_links": {
+    "self": {
+      "href": "/api/storage/volumes?return_timeout=120&fields=uuid%2Cname%2Csvm%2Csize%2Cmetric%2Cstate%2Cstyle%2Capplication%2Caggregates%2Cefficiency%2Cspace%2Cnas%2Csnapshot_policy%2Cqos%2Ctiering%2Cguarantee%2Cquota%2Ctype%2Cflexcache_endpoint_type%2Cclone%2Cencryption%2Csnaplock%2Csnapmirror%2Cis_svm_root%2Cmovement%2Cspace.block_storage_inactive_user_data&max_records=20&order_by=name"
+    },
+    "next": {
+      "href": "/api/storage/volumes?start.name=t88_fls4_prt1_pool2_root&start.uuid=c1d691df-9536-4301-b006-5fbdca0ba1ce&return_timeout=120&fields=uuid%2Cname%2Csvm%2Csize%2Cmetric%2Cstate%2Cstyle%2Capplication%2Caggregates%2Cefficiency%2Cspace%2Cnas%2Csnapshot_policy%2Cqos%2Ctiering%2Cguarantee%2Cquota%2Ctype%2Cflexcache_endpoint_type%2Cclone%2Cencryption%2Csnaplock%2Csnapmirror%2Cis_svm_root%2Cmovement%2Cspace.block_storage_inactive_user_data&max_records=20&order_by=name"
+    }
+  }
+}
